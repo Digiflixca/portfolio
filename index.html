@@ -31,6 +31,9 @@ h2{font-size:56px;font-weight:700;margin-bottom:18px}
 h3{font-size:24px;font-weight:600}
 .lede{color:var(--muted);font-size:18px;max-width:640px}
 .label{display:inline-block;font-family:var(--font-d);font-size:13px;font-weight:600;letter-spacing:.22em;color:var(--accent);margin-bottom:20px;text-transform:uppercase}
+.avail{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;color:var(--accent);border:1px solid rgba(184,255,61,.35);border-radius:999px;padding:7px 14px;margin-bottom:14px;background:rgba(184,255,61,.06)}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pl 1.8s infinite}
+@keyframes pl{0%,100%{box-shadow:0 0 0 0 rgba(184,255,61,.5)}50%{box-shadow:0 0 0 7px rgba(184,255,61,0)}}
 .label::before{content:"";display:inline-block;width:26px;height:2px;background:var(--accent);vertical-align:middle;margin-right:10px}
 /* ---------- header ---------- */
 header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,9,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
@@ -260,9 +263,10 @@ footer{border-top:1px solid var(--border);padding:64px 0 110px}
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
+      <p class="avail rv"><span class="pulse"></span>Available for new projects</p>
       <span class="label rv">Video • Content • Social Media</span>
-      <h1 class="rv">I Create Content That Helps Businesses <span class="hl">Get Seen.</span></h1>
-      <p class="sub rv">I create engaging videos and social media content for businesses, entrepreneurs and students — helping them present their work, connect with their audience and grow their online presence.</p>
+      <h1 class="rv">I'll Make Your Business <span class="hl">Get Seen.</span></h1>
+      <p class="sub rv">You do the work — I'll make sure people see it. I create engaging videos and social media content for businesses, entrepreneurs and students, so you can present your work, connect with your audience and grow online.</p>
       <div class="hero-ctas rv">
         <a href="#work" class="btn btn-accent">SEE MY WORK <span class="arr">→</span></a>
         <a href="#contact" class="btn btn-ghost">WORK WITH ME</a>
