@@ -147,6 +147,8 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,9,11,.8
   display:flex;align-items:center;justify-content:center}
 .avatar .init{font-family:var(--font-d);font-size:110px;font-weight:700;color:rgba(255,255,255,.92)}
 .avatar .init em{font-style:normal;color:var(--accent)}
+.photo{border-radius:20px;overflow:hidden;border:1px solid rgba(184,255,61,.3);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.photo img{display:block;width:100%;height:auto}
 .principle{margin:28px 0;padding:20px 26px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 12px 12px 0;font-family:var(--font-d);font-size:22px;font-weight:600;letter-spacing:.04em}
 /* ---------- faq ---------- */
 .faq-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:14px;overflow:hidden}
@@ -510,7 +512,7 @@ footer{border-top:1px solid var(--border);padding:64px 0 110px}
 <!-- 13 ABOUT -->
 <section id="about" style="background:linear-gradient(180deg,transparent,rgba(17,19,24,.6) 20%,rgba(17,19,24,.6) 80%,transparent)">
   <div class="wrap about-grid">
-    <div class="avatar rv"><div class="init">U<em>.</em></div></div>
+    <div class="photo rv"><img src="umesh.jpg" alt="Umesh — DiGiflix" loading="lazy"></div>
     <div>
       <span class="label rv">About me</span>
       <h2 class="rv">Hi, I'm Umesh.</h2>
