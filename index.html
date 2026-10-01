@@ -1,831 +1,783 @@
 <!DOCTYPE html>
-<html lang="en-CA">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DIGIFKLIX — Digital Growth & Marketing Consultancy | Get Discovered. Get Trusted. Get Chosen.</title>
-<meta name="description" content="DIGIFKLIX helps Canadian businesses build visibility across search, AI, social media, local discovery and the web — then turn that visibility into measurable growth. Get your free growth audit.">
-<meta property="og:title" content="DIGIFKLIX — Digital Growth & Marketing Consultancy">
-<meta property="og:description" content="Get Discovered. Get Trusted. Get Chosen. One connected system for digital growth.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://digifklix.ca/">
+<title>DIGIFKLIX — I Create Content That Helps Businesses Get Seen</title>
+<meta name="description" content="DIGIFKLIX is Umesh's creative digital content portfolio. Videos, social media content and creative promotion for businesses, entrepreneurs and students. Create. Connect. Grow.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"DIGIFKLIX","url":"https://digifklix.ca/","description":"Digital Growth & Marketing Consultancy for Canadian SMBs.","areaServed":"Canada","slogan":"Get Discovered. Get Trusted. Get Chosen."}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#0B1020; --blue:#2563EB; --cyan:#06B6D4;
-  --bg:#F8FAFC; --ink:#111827; --muted:#64748B;
-  --card:#FFFFFF; --line:#E2E8F0; --blue-soft:#EFF6FF;
-  --radius:14px; --max:1120px;
+  --bg:#08090B; --surface:#111318; --surface2:#16191f;
+  --text:#FFFFFF; --muted:#A7AAB2; --accent:#B8FF3D; --violet:#7C5CFF;
+  --border:rgba(255,255,255,.09); --radius:14px;
+  --font-d:'Space Grotesk',sans-serif; --font-b:'Inter',sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
-img,svg{max-width:100%}
-a{color:var(--blue)}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-section{padding:72px 0}
-.eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
-h1,h2,h3{line-height:1.18;letter-spacing:-.02em}
-h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;margin-bottom:14px}
-.lede{font-size:1.08rem;color:var(--muted);max-width:640px}
-.center{text-align:center}.center .lede{margin:0 auto}
-
-/* Header */
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
-.logo{font-weight:800;font-size:1.25rem;letter-spacing:.02em;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:9px}
-.logo .mark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:inline-block}
-.nav-links{display:none;gap:26px;list-style:none}
-.nav-links a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
-.nav-links a:hover{color:var(--blue)}
-.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:700;padding:13px 26px;border-radius:10px;text-decoration:none;border:none;cursor:pointer;font-size:1rem;transition:transform .15s ease,box-shadow .15s ease}
-.btn:hover{background:#1D4ED8;box-shadow:0 8px 22px rgba(37,99,235,.28)}
-.btn.ghost{background:transparent;color:var(--navy);border:2px solid var(--line)}
-.btn.ghost:hover{border-color:var(--blue);color:var(--blue);box-shadow:none}
-.btn.light{background:#fff;color:var(--navy)}
-.btn.light:hover{background:var(--blue-soft);box-shadow:none}
-.btn-nav{padding:10px 20px;font-size:.92rem}
-#nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px}
-#nav-toggle span{display:block;width:24px;height:2.5px;background:var(--navy);margin:5px 0;border-radius:2px}
-@media(max-width:900px){
-  #nav-toggle{display:block}
-  .nav-links{position:absolute;top:66px;left:0;right:0;background:#fff;flex-direction:column;padding:18px 22px 24px;gap:16px;border-bottom:1px solid var(--line);display:none}
+body{background:var(--bg);color:var(--text);font-family:var(--font-b);font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")}
+::selection{background:var(--accent);color:#08090B}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:96px 0;position:relative}
+h1,h2,h3{font-family:var(--font-d);line-height:1.08;letter-spacing:-.02em}
+h1{font-size:76px;font-weight:700}
+h2{font-size:56px;font-weight:700;margin-bottom:18px}
+h3{font-size:24px;font-weight:600}
+.lede{color:var(--muted);font-size:18px;max-width:640px}
+.label{display:inline-block;font-family:var(--font-d);font-size:13px;font-weight:600;letter-spacing:.22em;color:var(--accent);margin-bottom:20px;text-transform:uppercase}
+.label::before{content:"";display:inline-block;width:26px;height:2px;background:var(--accent);vertical-align:middle;margin-right:10px}
+/* ---------- header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,9,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:var(--font-d);font-weight:700;font-size:22px;letter-spacing:.06em;text-decoration:none}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:34px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--muted);font-size:15px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-d);font-weight:600;font-size:15px;letter-spacing:.04em;text-decoration:none;padding:14px 28px;border-radius:100px;border:1px solid transparent;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s,color .25s}
+.btn .arr{transition:transform .25s}
+.btn:hover .arr{transform:translateX(5px)}
+.btn-accent{background:var(--accent);color:#08090B}
+.btn-accent:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(184,255,61,.28)}
+.btn-ghost{border-color:var(--border);color:var(--text);background:transparent}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-sm{padding:10px 22px;font-size:14px}
+#menuBtn{display:none;background:none;border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:22px;width:46px;height:46px;cursor:pointer}
+/* ---------- hero ---------- */
+.hero{padding:172px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-220px;right:-180px;width:640px;height:640px;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,255,61,.13),transparent 65%);pointer-events:none}
+.hero::after{content:"";position:absolute;bottom:-260px;left:-200px;width:560px;height:560px;border-radius:50%;
+  background:radial-gradient(circle,rgba(124,92,255,.12),transparent 65%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;position:relative;z-index:1}
+.hero h1{margin:0 0 24px}
+.hero h1 .hl{color:var(--accent)}
+.hero p.sub{color:var(--muted);font-size:19px;max-width:520px;margin-bottom:36px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.trust{color:var(--muted);font-size:14px;letter-spacing:.02em}
+.trust strong{color:var(--text);font-weight:600}
+.featured{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--border);background:var(--surface);
+  aspect-ratio:16/10;display:flex;align-items:flex-end;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.featured .art{position:absolute;inset:0;background:
+  radial-gradient(120% 90% at 20% 10%,rgba(124,92,255,.35),transparent 55%),
+  radial-gradient(120% 100% at 85% 90%,rgba(184,255,61,.22),transparent 55%),
+  linear-gradient(135deg,#1a1e28,#0c0e13 70%)}
+.featured .rings{position:absolute;inset:0;opacity:.5;background:
+  repeating-linear-gradient(115deg,transparent 0 46px,rgba(255,255,255,.035) 46px 47px)}
+.featured .cap{position:relative;z-index:2;margin:18px;background:rgba(8,9,11,.72);backdrop-filter:blur(8px);
+  border:1px solid var(--border);border-radius:12px;padding:14px 20px;font-family:var(--font-d);font-size:13px;letter-spacing:.2em;font-weight:600}
+.featured .cap small{display:block;letter-spacing:.06em;color:var(--muted);font-family:var(--font-b);font-weight:400;font-size:13px;margin-top:4px}
+/* ---------- generic cards ---------- */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-5px);border-color:rgba(184,255,61,.4)}
+.card h3{margin-bottom:12px;font-size:21px}
+.card p{color:var(--muted);font-size:16px}
+.card .num{font-family:var(--font-d);color:var(--accent);font-size:14px;font-weight:700;letter-spacing:.18em;margin-bottom:16px;display:block}
+.card .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.1em;color:var(--accent);border:1px solid rgba(184,255,61,.35);border-radius:100px;padding:5px 14px;margin-bottom:16px;text-transform:uppercase}
+/* ---------- work ---------- */
+.work-card{background:var(--surface);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .25s,border-color .25s}
+.work-card:hover{transform:translateY(-5px);border-color:rgba(184,255,61,.4)}
+.work-thumb{aspect-ratio:16/9;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.work-thumb .art{position:absolute;inset:0;transition:transform .4s}
+.work-card:hover .work-thumb .art{transform:scale(1.03)}
+.wt1 .art{background:radial-gradient(110% 100% at 15% 20%,rgba(184,255,61,.4),transparent 55%),radial-gradient(100% 110% at 90% 85%,rgba(124,92,255,.4),transparent 55%),linear-gradient(135deg,#1c2230,#0b0d12 75%)}
+.wt2 .art{background:radial-gradient(110% 100% at 80% 15%,rgba(255,170,60,.32),transparent 55%),radial-gradient(100% 110% at 15% 90%,rgba(124,92,255,.35),transparent 55%),linear-gradient(135deg,#231d12,#0c0b09 75%)}
+.wt3 .art{background:radial-gradient(110% 100% at 50% 0%,rgba(90,200,255,.3),transparent 55%),radial-gradient(100% 110% at 90% 100%,rgba(184,255,61,.25),transparent 55%),linear-gradient(135deg,#12202a,#090c0e 75%)}
+.work-thumb .big{position:relative;font-family:var(--font-d);font-weight:700;font-size:30px;letter-spacing:.02em;text-align:center;padding:0 30px;z-index:2;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.work-body{padding:30px}
+.work-meta{font-size:13px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;font-weight:600}
+.work-meta b{color:var(--accent);font-weight:600}
+.work-body h3{font-size:24px;margin-bottom:10px}
+.work-body>p{color:var(--muted);font-size:16px;margin-bottom:18px}
+.detail-toggle{background:none;border:none;color:var(--accent);font-family:var(--font-d);font-weight:600;font-size:15px;letter-spacing:.05em;cursor:pointer;padding:0;display:inline-flex;align-items:center;gap:8px}
+.detail-toggle .arr{transition:transform .25s}
+.detail-toggle[aria-expanded="true"] .arr{transform:rotate(90deg)}
+.project-detail{display:none;margin-top:20px;border-top:1px solid var(--border);padding-top:20px}
+.project-detail.open{display:block}
+.project-detail h4{font-family:var(--font-d);font-size:15px;letter-spacing:.14em;color:var(--accent);margin:18px 0 8px;text-transform:uppercase}
+.project-detail h4:first-child{margin-top:0}
+.project-detail p,.project-detail li{color:var(--muted);font-size:15.5px}
+.project-detail ul{padding-left:20px;margin-top:6px}
+.honest-note{margin-top:22px;background:rgba(184,255,61,.06);border:1px solid rgba(184,255,61,.25);border-radius:12px;padding:18px 22px;font-size:15px;color:var(--muted)}
+.honest-note strong{color:var(--accent)}
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px}
+.step{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px 22px;transition:transform .25s,border-color .25s}
+.step:hover{transform:translateY(-5px);border-color:rgba(184,255,61,.4)}
+.step .n{font-family:var(--font-d);font-size:40px;font-weight:700;color:transparent;-webkit-text-stroke:1.5px var(--accent);margin-bottom:14px}
+.step h3{font-size:18px;margin-bottom:10px}
+.step p{color:var(--muted);font-size:14.5px}
+/* ---------- before/after ---------- */
+.ba{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:38px;margin-top:24px}
+.ba-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:stretch;margin-top:8px}
+.ba-box{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:26px}
+.ba-box.after{border-color:rgba(184,255,61,.4)}
+.ba-k{font-family:var(--font-d);font-size:12px;font-weight:700;letter-spacing:.22em;margin-bottom:12px;display:block}
+.ba-box.before .ba-k{color:var(--muted)}
+.ba-box.after .ba-k{color:var(--accent)}
+.ba-box p{font-size:16.5px}
+.ba-box p.quote{font-size:19px;font-family:var(--font-d);font-weight:500}
+.ba-arrow{align-self:center;font-size:30px;color:var(--accent);font-family:var(--font-d)}
+/* ---------- ideas ---------- */
+.idea{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;transition:transform .25s,border-color .25s}
+.idea:hover{transform:translateY(-5px);border-color:rgba(184,255,61,.4)}
+.idea .k{font-family:var(--font-d);font-size:13px;font-weight:700;letter-spacing:.2em;color:var(--accent);margin-bottom:12px;display:block}
+.idea p.quote{font-family:var(--font-d);font-size:18px;font-weight:500;font-style:italic}
+/* ---------- metrics ---------- */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.metric{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:30px 24px;text-align:center}
+.metric .m{font-family:var(--font-d);font-size:22px;font-weight:700;color:var(--accent);margin-bottom:8px}
+.metric p{color:var(--muted);font-size:14.5px}
+/* ---------- about ---------- */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.avatar{aspect-ratio:1;border-radius:20px;border:1px solid var(--border);position:relative;overflow:hidden;
+  background:radial-gradient(100% 100% at 30% 20%,rgba(124,92,255,.4),transparent 60%),radial-gradient(100% 100% at 75% 85%,rgba(184,255,61,.3),transparent 60%),linear-gradient(150deg,#1a1f2b,#0b0d12 70%);
+  display:flex;align-items:center;justify-content:center}
+.avatar .init{font-family:var(--font-d);font-size:110px;font-weight:700;color:rgba(255,255,255,.92)}
+.avatar .init em{font-style:normal;color:var(--accent)}
+.principle{margin:28px 0;padding:20px 26px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 12px 12px 0;font-family:var(--font-d);font-size:22px;font-weight:600;letter-spacing:.04em}
+/* ---------- faq ---------- */
+.faq-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:14px;overflow:hidden}
+.faq-q{width:100%;background:none;border:none;color:var(--text);font-family:var(--font-d);font-size:18px;font-weight:600;text-align:left;padding:22px 26px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-q .pl{color:var(--accent);font-size:26px;font-weight:400;flex-shrink:0;transition:transform .25s}
+.faq-item.open .faq-q .pl{transform:rotate(45deg)}
+.faq-a{display:none;padding:0 26px 24px;color:var(--muted);font-size:16px}
+.faq-item.open .faq-a{display:block}
+/* ---------- final cta ---------- */
+.final-cta{text-align:center;background:linear-gradient(180deg,var(--surface),var(--bg));border:1px solid var(--border);border-radius:24px;padding:90px 40px;position:relative;overflow:hidden}
+.final-cta::before{content:"";position:absolute;top:-160px;left:50%;transform:translateX(-50%);width:560px;height:340px;border-radius:50%;background:radial-gradient(ellipse,rgba(184,255,61,.16),transparent 65%);pointer-events:none}
+.final-cta h2{position:relative}
+.final-cta .lede{margin:0 auto 36px;position:relative}
+.final-cta .row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
+.final-cta .small{margin-top:26px;color:var(--muted);font-size:14.5px;position:relative}
+/* ---------- form ---------- */
+.form-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:48px;max-width:760px;margin:48px auto 0}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f-group{margin-bottom:20px}
+.f-group label{display:block;font-size:14px;font-weight:600;margin-bottom:8px;letter-spacing:.02em}
+.f-group label .req{color:var(--accent)}
+.f-group input,.f-group textarea,.f-group select{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:var(--font-b);font-size:16px;padding:14px 16px;transition:border-color .2s}
+.f-group input:focus,.f-group textarea:focus,.f-group select:focus{outline:none;border-color:var(--accent)}
+.f-group textarea{min-height:120px;resize:vertical}
+.f-group .err{display:none;color:#ff7a7a;font-size:13px;margin-top:6px}
+.f-group.invalid input,.f-group.invalid textarea{border-color:#ff7a7a}
+.f-group.invalid .err{display:block}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+.check{display:flex;align-items:center;gap:12px;background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px 16px;cursor:pointer;font-size:15px;transition:border-color .2s}
+.check:hover{border-color:rgba(184,255,61,.5)}
+.check input{accent-color:var(--accent);width:18px;height:18px;cursor:pointer}
+.form-note{color:var(--muted);font-size:13.5px;margin-top:18px;text-align:center}
+#formSuccess{display:none;text-align:center;padding:40px 10px}
+#formSuccess .tick{width:76px;height:76px;border-radius:50%;background:var(--accent);color:#08090B;font-size:36px;display:flex;align-items:center;justify-content:center;margin:0 auto 22px;font-weight:700}
+#formSuccess h3{font-size:28px;margin-bottom:12px}
+#formSuccess p{color:var(--muted)}
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--border);padding:64px 0 110px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:44px}
+.foot-brand{font-family:var(--font-d);font-weight:700;font-size:20px;letter-spacing:.06em;margin-bottom:12px}
+.foot-brand span{color:var(--accent)}
+.foot-tag{color:var(--muted);font-size:14.5px}
+.foot-h{font-family:var(--font-d);font-size:13px;font-weight:700;letter-spacing:.2em;color:var(--muted);margin-bottom:16px;text-transform:uppercase}
+.foot-links{list-style:none}
+.foot-links li{margin-bottom:10px}
+.foot-links a{color:var(--muted);text-decoration:none;font-size:15px;transition:color .2s}
+.foot-links a:hover{color:var(--accent)}
+.copy{border-top:1px solid var(--border);padding-top:28px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+/* ---------- chips ---------- */
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.chip{border:1px solid var(--border);border-radius:100px;padding:10px 22px;font-size:15px;color:var(--muted);background:var(--surface);transition:border-color .2s,color .2s}
+.chip:hover{border-color:var(--accent);color:var(--text)}
+.chip.hot{border-color:rgba(184,255,61,.45);color:var(--text)}
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.hero .rv{transition:opacity .9s ease,transform .9s ease}
+/* ---------- sticky mobile cta ---------- */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(8,9,11,.92);backdrop-filter:blur(12px);border-top:1px solid var(--border)}
+.sticky-cta .btn{width:100%;justify-content:center}
+/* ---------- responsive ---------- */
+@media(max-width:960px){
+  h1{font-size:46px} h2{font-size:38px}
+  body{font-size:16px} .lede{font-size:16px}
+  section{padding:72px 0}
+  .hero{padding:132px 0 64px}
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .grid4{grid-template-columns:1fr 1fr} .grid3{grid-template-columns:1fr} .grid2{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr} .metrics{grid-template-columns:1fr 1fr}
+  .about-grid{grid-template-columns:1fr;gap:36px}
+  .ba-grid{grid-template-columns:1fr} .ba-arrow{transform:rotate(90deg);justify-self:center}
+  .nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#0c0e12;flex-direction:column;padding:12px 24px 24px;gap:0;border-bottom:1px solid var(--border)}
   .nav-links.open{display:flex}
-  .nav .btn-nav{display:none}
+  .nav-links li{border-top:1px solid var(--border)}
+  .nav-links a{display:block;padding:16px 0;font-size:17px}
+  .nav-cta{display:none}
+  #menuBtn{display:block}
+  .sticky-cta{display:block}
+  footer{padding-bottom:170px}
+  .foot-grid{grid-template-columns:1fr}
+  .form-card{padding:32px 24px}
+  .f-row{grid-template-columns:1fr}
+  .checks{grid-template-columns:1fr}
+  .final-cta{padding:64px 24px}
 }
-
-/* Hero */
-.hero{background:radial-gradient(1100px 500px at 80% -10%,rgba(6,182,212,.22),transparent 60%),radial-gradient(900px 480px at 10% 110%,rgba(37,99,235,.20),transparent 60%),var(--navy);color:#fff;padding:104px 0 88px;position:relative;overflow:hidden}
-.hero h1{font-size:clamp(2.2rem,6.4vw,3.9rem);font-weight:800;max-width:800px}
-.hero h1 .accent{color:var(--cyan)}
-.hero p{color:#CBD5E1;font-size:1.12rem;max-width:620px;margin:20px 0 32px}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
-.hero-ctas .btn.ghost{color:#fff;border-color:#334155}
-.hero-ctas .btn.ghost:hover{border-color:var(--cyan);color:var(--cyan)}
-.hero-note{margin-top:26px;font-size:.88rem;color:#94A3B8}
-
-/* Score */
-.score-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:34px}
-.score-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.score-card h3{font-size:1rem;font-weight:700;margin-bottom:6px}
-.score-card p{font-size:.92rem;color:var(--muted)}
-.score-card .n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:var(--blue-soft);color:var(--blue);font-weight:800;margin-bottom:12px}
-.score-note{margin-top:26px;background:var(--blue-soft);border:1px solid #BFDBFE;border-radius:var(--radius);padding:18px 22px;font-size:.95rem}
-
-/* Problems */
-.problems{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.prob-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:34px}
-.prob{background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--cyan);border-radius:10px;padding:20px 22px}
-.prob h3{font-size:1.02rem;margin-bottom:6px}
-.prob p{font-size:.93rem;color:var(--muted)}
-
-/* Engine */
-.engine{background:var(--navy);color:#fff}
-.engine .eyebrow{color:var(--cyan)}
-.engine .lede{color:#94A3B8}
-.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:34px}
-.pillar{background:#111A30;border:1px solid #1E293B;border-radius:var(--radius);padding:24px 20px}
-.pillar .tag{font-size:.75rem;font-weight:800;letter-spacing:.12em;color:var(--cyan);margin-bottom:10px}
-.pillar h3{font-size:1.05rem;margin-bottom:8px}
-.pillar p{font-size:.9rem;color:#94A3B8}
-.engine-foot{margin-top:30px;text-align:center;color:#CBD5E1;font-weight:600;font-size:1.05rem}
-
-/* Services */
-.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:34px}
-.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:transform .18s ease,box-shadow .18s ease}
-.svc:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(11,16,32,.10)}
-.svc .icon{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.svc .icon svg{width:24px;height:24px;stroke:#fff}
-.svc h3{font-size:1.12rem;margin-bottom:8px}
-.svc p{font-size:.94rem;color:var(--muted)}
-
-/* AI + Local */
-.split{display:grid;grid-template-columns:1fr;gap:40px;align-items:start}
-@media(min-width:900px){.split{grid-template-columns:1fr 1fr}}
-.checklist{list-style:none;margin-top:18px;display:grid;gap:12px}
-.checklist li{display:flex;gap:12px;font-size:.96rem}
-.checklist li svg{flex:none;width:20px;height:20px;stroke:var(--blue);margin-top:3px}
-.limit{background:#FEF2F2;border:1px solid #FECACA;border-radius:var(--radius);padding:18px 22px;margin-top:22px;font-size:.93rem}
-.limit strong{color:#B91C1C}
-.ai-section{background:var(--blue-soft)}
-.local-section{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-
-/* Industries */
-.ind-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:30px}
-.ind{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;font-weight:600;font-size:.95rem;display:flex;align-items:center;gap:10px}
-.ind .dot{width:9px;height:9px;border-radius:50%;background:var(--cyan);flex:none}
-
-/* Work */
-.work{background:var(--navy);color:#fff}
-.work .eyebrow{color:var(--cyan)}
-.work .lede{color:#94A3B8}
-.case{background:#111A30;border:1px solid #1E293B;border-radius:var(--radius);padding:34px;margin-top:32px}
-.case .flag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);border:1px solid #164E63;border-radius:20px;padding:5px 14px;margin-bottom:16px}
-.case h3{font-size:1.4rem;margin-bottom:6px}
-.case .url{color:var(--cyan);text-decoration:none;font-weight:600}
-.case-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:24px}
-@media(min-width:800px){.case-grid{grid-template-columns:repeat(5,1fr)}}
-.stage h4{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);margin-bottom:8px}
-.stage p{font-size:.9rem;color:#CBD5E1}
-.proof-nums{display:flex;flex-wrap:wrap;gap:26px;margin-top:28px;padding-top:24px;border-top:1px solid #1E293B}
-.proof-nums .num strong{display:block;font-size:1.5rem;color:#fff}
-.proof-nums .num span{font-size:.85rem;color:#94A3B8}
-.honest{margin-top:22px;font-size:.88rem;color:#94A3B8}
-
-/* Tools */
-.tool-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:34px}
-.tool{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
-.tool h3{font-size:1.08rem;margin-bottom:8px}
-.tool p{font-size:.93rem;color:var(--muted);margin-bottom:14px}
-.tool .soon{display:inline-block;font-size:.75rem;font-weight:700;background:#FEF3C7;color:#92400E;border-radius:20px;padding:4px 12px;letter-spacing:.06em}
-.tool .live{display:inline-block;font-size:.75rem;font-weight:700;background:#D1FAE5;color:#065F46;border-radius:20px;padding:4px 12px;letter-spacing:.06em}
-.calc label,.audit-form label{display:block;font-size:.88rem;font-weight:600;margin:12px 0 5px}
-.calc input,.audit-form input,.audit-form select,.audit-form textarea{width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:9px;font-size:.95rem;font-family:inherit;background:#fff}
-.calc input:focus,.audit-form input:focus,.audit-form select:focus,.audit-form textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.14)}
-.calc-result{margin-top:16px;background:var(--blue-soft);border-radius:10px;padding:16px 18px;font-size:.95rem;display:none}
-.calc-result.show{display:block}
-.calc-result strong{color:var(--blue)}
-.calc-note{font-size:.8rem;color:var(--muted);margin-top:10px}
-.gbp-item{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:.93rem;cursor:pointer}
-.gbp-item:last-child{border-bottom:none}
-.gbp-item input{width:18px;height:18px;margin-top:3px;accent-color:var(--blue);flex:none}
-.gbp-item.done span{text-decoration:line-through;color:var(--muted)}
-.progress{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin:14px 0 6px}
-.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:6px;transition:width .3s ease}
-.progress-label{font-size:.85rem;color:var(--muted);font-weight:600}
-
-/* Process */
-.process{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.steps{display:grid;grid-template-columns:1fr;gap:0;margin-top:34px;counter-reset:step}
-@media(min-width:800px){.steps{grid-template-columns:repeat(5,1fr)}}
-.step{padding:24px 18px;border-top:3px solid var(--line);position:relative}
-.step::before{counter-increment:step;content:counter(step);position:absolute;top:-22px;left:18px;width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
-.step h3{font-size:1rem;margin:10px 0 6px}
-.step p{font-size:.9rem;color:var(--muted)}
-
-/* About + Insights */
-.about-grid{display:grid;grid-template-columns:1fr;gap:30px;margin-top:26px}
-@media(min-width:900px){.about-grid{grid-template-columns:1.2fr .8fr}}
-.about-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
-.about-card h3{font-size:1.1rem;margin-bottom:10px}
-.about-card p{font-size:.95rem;color:var(--muted);margin-bottom:10px}
-.insight-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.insight-tags span{background:var(--blue-soft);color:#1D4ED8;font-weight:600;font-size:.86rem;border-radius:20px;padding:7px 15px}
-
-/* CTA / Audit */
-.cta{background:linear-gradient(135deg,var(--navy) 0%,#16245c 100%);color:#fff}
-.cta .eyebrow{color:var(--cyan)}
-.cta h2{color:#fff}
-.cta .lede{color:#CBD5E1}
-.audit-form{background:#fff;color:var(--ink);border-radius:var(--radius);padding:34px;margin-top:32px;max-width:720px}
-.audit-form .row{display:grid;grid-template-columns:1fr;gap:0 16px}
-@media(min-width:640px){.audit-form .row{grid-template-columns:1fr 1fr}}
-.audit-form textarea{min-height:110px;resize:vertical}
-.form-note{font-size:.85rem;color:var(--muted);margin-top:14px}
-
-/* Footer */
-footer{background:var(--navy);color:#94A3B8;padding:56px 0 28px}
-.foot-grid{display:grid;grid-template-columns:1fr;gap:32px;margin-bottom:36px}
-@media(min-width:800px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
-.foot-logo{color:#fff;font-weight:800;font-size:1.3rem;margin-bottom:12px;display:flex;align-items:center;gap:9px}
-.foot-logo .mark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:inline-block}
-footer h4{color:#fff;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
-footer ul{list-style:none;display:grid;gap:9px}
-footer a{color:#94A3B8;text-decoration:none;font-size:.94rem}
-footer a:hover{color:#fff}
-.legal{border-top:1px solid #1E293B;padding-top:22px;font-size:.84rem;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
-.legal details{margin-top:14px;max-width:800px}
-.legal summary{cursor:pointer;color:#CBD5E1;font-weight:600}
-.legal details p{margin-top:10px;line-height:1.7}
-
-/* Reveal */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+@media(max-width:560px){.grid4{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="#top"><span class="mark" aria-hidden="true"></span>DIGIFKLIX</a>
-    <button id="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#engine">Solutions</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#industries">Industries</a></li>
+    <a class="logo" href="#top">DIGI<span>FKLIX</span></a>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#work">Work</a></li>
-      <li><a href="#tools">Tools</a></li>
-      <li><a href="#insights">Insights</a></li>
+      <li><a href="#create">What I Create</a></li>
+      <li><a href="#process">Process</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="btn btn-nav" href="#audit">Free Growth Audit</a>
+    <a href="#contact" class="btn btn-accent btn-sm nav-cta">WORK WITH ME <span class="arr">→</span></a>
+    <button id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
   </div>
 </header>
 
-<main id="top">
-<!-- ============ HERO (master copy, verbatim) ============ -->
-<section class="hero" style="padding-top:104px">
-  <div class="wrap">
-    <h1>GET DISCOVERED. GET TRUSTED. <span class="accent">GET CHOSEN.</span></h1>
-    <p>DIGIFKLIX helps businesses build visibility across search, AI, social media, local discovery and the web — then turn that visibility into measurable growth.</p>
-    <div class="hero-ctas">
-      <a class="btn" href="#audit">Get Your Free Growth Audit</a>
-      <a class="btn ghost" href="#engine">See the Growth Engine</a>
-    </div>
-    <p class="hero-note">A digital growth &amp; marketing consultancy for Canadian SMBs, local businesses, startups and professional services.</p>
-  </div>
-</section>
+<div class="sticky-cta"><a href="#contact" class="btn btn-accent">WORK WITH ME <span class="arr">→</span></a></div>
 
-<!-- ============ GROWTH SCORE ============ -->
-<section id="score">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Digital Growth Score™</span>
-      <h2>One score. Eight dimensions. Zero guesswork.</h2>
-      <p class="lede">Your Digital Growth Score is a 0–100 measure of how ready your business is to be found, trusted and chosen online. Every score comes with a plain-English explanation and prioritized next actions.</p>
+<!-- 01 HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="label rv">Video • Content • Social Media</span>
+      <h1 class="rv">I Create Content That Helps Businesses <span class="hl">Get Seen.</span></h1>
+      <p class="sub rv">I create engaging videos and social media content for businesses, entrepreneurs and students — helping them present their work, connect with their audience and grow their online presence.</p>
+      <div class="hero-ctas rv">
+        <a href="#work" class="btn btn-accent">SEE MY WORK <span class="arr">→</span></a>
+        <a href="#contact" class="btn btn-ghost">WORK WITH ME</a>
+      </div>
+      <p class="trust rv"><strong>Real projects. Real content.</strong> Built to get attention.</p>
     </div>
-    <div class="score-grid">
-      <div class="score-card reveal"><div class="n">1</div><h3>Discoverability</h3><p>Can search engines and customers find you at all?</p></div>
-      <div class="score-card reveal"><div class="n">2</div><h3>AI Visibility</h3><p>Do AI search tools describe your business accurately?</p></div>
-      <div class="score-card reveal"><div class="n">3</div><h3>Local Presence</h3><p>Do you show up on Maps and local results near your customers?</p></div>
-      <div class="score-card reveal"><div class="n">4</div><h3>Website</h3><p>Is your site fast, clear and built to convert?</p></div>
-      <div class="score-card reveal"><div class="n">5</div><h3>Content</h3><p>Does your content answer real customer questions?</p></div>
-      <div class="score-card reveal"><div class="n">6</div><h3>Trust</h3><p>Do reviews, profiles and proof make you the safe choice?</p></div>
-      <div class="score-card reveal"><div class="n">7</div><h3>Conversion</h3><p>Does attention turn into enquiries, bookings and sales?</p></div>
-      <div class="score-card reveal"><div class="n">8</div><h3>Measurement</h3><p>Do you know which marketing actually brings revenue?</p></div>
-    </div>
-    <div class="score-note reveal"><strong>How scoring works:</strong> your score is calculated from a real audit of your business — never invented, never a generic template. Request the free audit below and we will score all eight dimensions for you.</div>
-  </div>
-</section>
-
-<!-- ============ PROBLEMS ============ -->
-<section class="problems" id="problems">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">The Problems We Solve</span>
-      <h2>Sound familiar?</h2>
-      <p class="lede">Most businesses we meet are not failing at marketing. They are invisible in the places customers actually look.</p>
-    </div>
-    <div class="prob-grid">
-      <div class="prob reveal"><h3>Invisible on Google</h3><p>Competitors show up for the searches your customers type. You do not — or you appear on page three, which is the same thing.</p></div>
-      <div class="prob reveal"><h3>AI tools get you wrong</h3><p>ChatGPT, Gemini and Perplexity describe your business with outdated or invented details because your public information is thin.</p></div>
-      <div class="prob reveal"><h3>No-shows on Maps</h3><p>Nearby customers search, see three competitors with reviews and photos, and never learn you exist.</p></div>
-      <div class="prob reveal"><h3>A website that doesn't sell</h3><p>Traffic arrives, then leaves. No clear offer, no clear next step, no reason to choose you over the tab next door.</p></div>
-      <div class="prob reveal"><h3>Social without strategy</h3><p>Posting regularly but nothing connects to revenue. Likes do not pay invoices.</p></div>
-      <div class="prob reveal"><h3>Marketing you can't measure</h3><p>Money goes out every month. Nobody can say which part brought a single customer back.</p></div>
+    <div class="featured rv">
+      <div class="art"></div><div class="rings"></div>
+      <div class="cap">MY LATEST WORK<small>Video &amp; content production — scroll to see it</small></div>
     </div>
   </div>
 </section>
 
-<!-- ============ GROWTH ENGINE ============ -->
-<section class="engine" id="engine">
+<!-- 02 IMMEDIATE VALUE -->
+<section id="value" style="padding-top:40px">
   <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">One Connected System for Digital Growth</span>
-      <h2 style="color:#fff">The DIGIFKLIX Growth Engine</h2>
-      <p class="lede">Five connected stages. Each one feeds the next — so visibility compounds instead of resetting every month.</p>
-    </div>
-    <div class="pillars">
-      <div class="pillar reveal"><div class="tag">DISCOVER</div><h3>Be found everywhere</h3><p>SEO, AEO, AI search visibility, local SEO, Google Business Profile and Maps.</p></div>
-      <div class="pillar reveal"><div class="tag">ATTRACT</div><h3>Earn the attention</h3><p>Social media, short-form video, content, brand storytelling and creative.</p></div>
-      <div class="pillar reveal"><div class="tag">CONVERT</div><h3>Turn visits into revenue</h3><p>Websites, landing pages, conversion optimization and lead generation.</p></div>
-      <div class="pillar reveal"><div class="tag">TRUST</div><h3>Become the safe choice</h3><p>Reviews, reputation, brand authority, social proof and business profiles.</p></div>
-      <div class="pillar reveal"><div class="tag">MEASURE</div><h3>Prove what works</h3><p>Analytics, attribution, reporting, dashboards and performance tracking.</p></div>
-    </div>
-    <p class="engine-foot reveal">Discover. Attract. Convert. Build Trust. Measure. Improve.</p>
+    <span class="label rv">Why this works</span>
+    <h2 class="rv">You have a business.<br>I help you turn it into content.</h2>
+    <p class="lede rv">Your business already has a story: your products, your service, your customers, your experience. I turn those things into videos and social media content designed to make people stop, watch and engage.</p>
   </div>
 </section>
 
-<!-- ============ SERVICES ============ -->
-<section id="services">
+<!-- 03 WHAT I CREATE -->
+<section id="create">
   <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Services</span>
-      <h2>Everything growth needs, under one roof</h2>
-      <p class="lede">Six service lines that work as one system — because ranking without converting is just expensive vanity.</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
-        <h3>Search &amp; AI Visibility</h3>
-        <p>SEO, answer-engine optimization, generative-search readiness, local SEO, Google Business Profile, structured data, entity consistency and content authority — so customers and AI tools alike find the real you.</p>
-      </div>
-      <div class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M17 8a5 5 0 0 0-8.9-3M7 16a5 5 0 0 0 8.9 3"/><circle cx="12" cy="12" r="10"/></svg></div>
-        <h3>Social &amp; Content</h3>
-        <p>Facebook, Instagram, LinkedIn, TikTok and YouTube — plus short-form video and a content strategy built around what your customers actually search for.</p>
-      </div>
-      <div class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></div>
-        <h3>Web &amp; Conversion</h3>
-        <p>Business websites, landing pages, conversion-rate optimization, lead generation and e-commerce — every page with a clear next action.</p>
-      </div>
-      <div class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8-6.1-3.4-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg></div>
-        <h3>Brand &amp; Reputation</h3>
-        <p>Brand strategy, review strategy, reputation management, social proof and digital presence — the layer that turns "found" into "chosen."</p>
-      </div>
-      <div class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 11l18-8-8 18-2.5-7.5z"/></svg></div>
-        <h3>Advertising</h3>
-        <p>Google Ads, Meta Ads, YouTube Ads and retargeting — paid traffic aimed at leads and sales, measured against revenue, not clicks.</p>
-      </div>
-      <div class="svc reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/></svg></div>
-        <h3>Analytics &amp; Growth</h3>
-        <p>GA4, Search Console, conversion tracking, reporting, analysis and growth strategy — so you always know which marketing earned its keep.</p>
-      </div>
+    <span class="label rv">Services</span>
+    <h2 class="rv">Content built for attention.</h2>
+    <div class="grid4">
+      <div class="card rv"><span class="tag">Video</span><h3>Video Content</h3><p>Short-form videos, Reels and promotional videos. Product videos, business videos, educational videos and AI-assisted videos.</p></div>
+      <div class="card rv"><span class="tag">Social</span><h3>Social Media Content</h3><p>Facebook and Instagram content, captions, content ideas, page content and engagement-focused posts.</p></div>
+      <div class="card rv"><span class="tag">Promo</span><h3>Business Promotion</h3><p>Product promotions, service promotions, business introductions, offers and event promotions.</p></div>
+      <div class="card rv"><span class="tag">Creative</span><h3>Creative Content</h3><p>Social graphics, thumbnails, AI visuals, creative concepts and branded content.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ AI SEARCH VISIBILITY ============ -->
-<section class="ai-section" id="ai-search">
+<!-- 04 MY WORK -->
+<section id="work" style="background:linear-gradient(180deg,transparent,rgba(17,19,24,.6) 20%,rgba(17,19,24,.6) 80%,transparent)">
   <div class="wrap">
-    <div class="split">
-      <div class="reveal">
-        <span class="eyebrow">AI Search Visibility</span>
-        <h2>Be the answer AI gives about you</h2>
-        <p class="lede">Customers now ask ChatGPT, Gemini and Perplexity instead of typing keywords. If your business information is thin or inconsistent, AI fills the gaps — sometimes with fiction.</p>
-        <ul class="checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>AI Visibility Audit</strong> — brand clarity, entity consistency, content authority, structured data, local information, reviews and citation signals.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Clear answers</strong> — content structured so both people and machines understand what you do.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>First-hand expertise</strong> — real experience and evidence, the kind of content AI systems prefer to cite.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Consistent identity</strong> — the same name, facts and story everywhere you appear.</span></li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <div class="limit">
-          <strong>Our honest position:</strong> AI search is an extension of search strategy, not a magical replacement for SEO. No agency — us included — can promise that ChatGPT, Google, Gemini or Perplexity will include, cite, rank or recommend your business. Anyone who guarantees it is selling you something. What we can do is make your business unmistakably clear, consistent and citable everywhere these systems look.
+    <span class="label rv">Portfolio</span>
+    <h2 class="rv">Don't just take my word for it.<br>See what I can create.</h2>
+    <p class="lede rv">Projects I've created, edited, designed or worked on. Open any project for the full story.</p>
+    <div class="grid3">
+
+      <article class="work-card rv">
+        <div class="work-thumb wt1"><div class="art"></div><div class="big">GIFSQ Learning Platform</div></div>
+        <div class="work-body">
+          <div class="work-meta"><b>Education brand</b> • Canada / Global • Video &amp; content production</div>
+          <h3>Food-safety education, turned into video</h3>
+          <p>End-to-end content production for the Global Institute for Food Safety &amp; Quality — an online education brand.</p>
+          <button class="detail-toggle" aria-expanded="false">PROJECT DETAILS <span class="arr">→</span></button>
+          <div class="project-detail">
+            <h4>The Challenge</h4>
+            <p>Technical food-safety knowledge needed to reach working professionals and students in a format they'd actually watch and finish.</p>
+            <h4>What I Created</h4>
+            <ul>
+              <li>Course lesson videos with narration and visuals</li>
+              <li>Short-form educational story videos</li>
+              <li>Podcast episodes with full production</li>
+              <li>Thumbnails, graphics and supporting content</li>
+            </ul>
+            <h4>The Result</h4>
+            <p>A complete content library powering the brand's courses and public channels — video, audio and visual content produced to a consistent standard.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </article>
 
-<!-- ============ LOCAL DISCOVERY ============ -->
-<section class="local-section" id="local">
-  <div class="wrap">
-    <div class="split">
-      <div class="reveal">
-        <span class="eyebrow">Local Discovery</span>
-        <h2>Own your neighbourhood on Google</h2>
-        <p class="lede">For local businesses, the Google Business Profile and the Map pack decide who gets the call. Most profiles we see are half-finished — wrong hours, no photos, unanswered reviews.</p>
-        <ul class="checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Google Business Profile</strong> — complete setup, categories, services, photos and posts.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Maps visibility</strong> — show up where nearby customers are actually looking.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Reviews</strong> — a steady, honest review engine and professional responses.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Local pages &amp; citations</strong> — consistent name, address, phone, hours and services everywhere.</span></li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <div class="limit" style="background:#EFF6FF;border-color:#BFDBFE">
-          <strong style="color:#1D4ED8">A note on access:</strong> <span style="color:var(--ink)">we only ever work on business profiles with the owner's authorized access — we never claim access to private profile data without it.</span>
+      <article class="work-card rv">
+        <div class="work-thumb wt2"><div class="art"></div><div class="big">Slow-English Story Series</div></div>
+        <div class="work-body">
+          <div class="work-meta"><b>Original series</b> • Global • Short-form video</div>
+          <h3>Stories that teach English while people watch</h3>
+          <p>An original short-video series — simple stories told in slow, clear English for learners.</p>
+          <button class="detail-toggle" aria-expanded="false">PROJECT DETAILS <span class="arr">→</span></button>
+          <div class="project-detail">
+            <h4>The Challenge</h4>
+            <p>Make English-learning content that feels like entertainment, not a classroom — something learners choose to watch.</p>
+            <h4>What I Created</h4>
+            <ul>
+              <li>Original story concepts and scripts</li>
+              <li>AI-assisted video production, shot by shot</li>
+              <li>Voice narration matched to the visuals</li>
+              <li>Consistent characters across episodes</li>
+            </ul>
+            <h4>The Result</h4>
+            <p>A repeatable production system for story videos — concept to finished episode, built to hold attention and teach at the same time.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ INDUSTRIES ============ -->
-<section id="industries">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Industries</span>
-      <h2>Built for how local businesses actually work</h2>
-      <p class="lede">Same growth engine, tuned to the way customers find and choose businesses in your trade.</p>
-    </div>
-    <div class="ind-grid">
-      <div class="ind reveal"><span class="dot"></span>Restaurants &amp; Food</div>
-      <div class="ind reveal"><span class="dot"></span>Grocery &amp; Retail</div>
-      <div class="ind reveal"><span class="dot"></span>Real Estate</div>
-      <div class="ind reveal"><span class="dot"></span>Construction &amp; Renovation</div>
-      <div class="ind reveal"><span class="dot"></span>Professional Services</div>
-      <div class="ind reveal"><span class="dot"></span>Health &amp; Wellness</div>
-      <div class="ind reveal"><span class="dot"></span>Automotive</div>
-      <div class="ind reveal"><span class="dot"></span>Home Services</div>
-      <div class="ind reveal"><span class="dot"></span>E-commerce</div>
-      <div class="ind reveal"><span class="dot"></span>Other Local Businesses</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WORK ============ -->
-<section id="work" class="alt">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Selected Work</span>
-      <h2>Proof, not promises</h2>
-      <p class="lede">We'd rather show you one real project than ten stock photos.</p>
-    </div>
-    <div class="work-grid">
-      <article class="work-card reveal">
-        <span class="tag">Case Study</span>
-        <h3>GIFSQ — Global Institute for Food Safety &amp; Quality</h3>
-        <p>Ongoing growth partnership for a food-safety education platform: website development, technical SEO, content strategy and publishing, quiz and course platform work, templates and resource library, analytics and performance reporting.</p>
-        <div class="work-meta"><span>Ongoing</span><span>·</span><span>Web, SEO, Content, Platform</span></div>
       </article>
-      <article class="work-card reveal">
-        <span class="tag">Concept Project</span>
-        <h3>Local Restaurant Group — Discovery Overhaul</h3>
-        <p>Concept: a multi-location restaurant group gets complete Google Business Profiles, a review engine, local landing pages and a short-form video content system — built to turn "near me" searches into booked tables.</p>
-        <div class="work-meta"><span>Concept</span><span>·</span><span>Local SEO, Reviews, Content</span></div>
-      </article>
-      <article class="work-card reveal">
-        <span class="tag">Concept Project</span>
-        <h3>Home Services — Lead Engine</h3>
-        <p>Concept: a home-services company gets a conversion-focused website, Google Ads and Meta retargeting, and call tracking — built to answer one question: which marketing actually books jobs?</p>
-        <div class="work-meta"><span>Concept</span><span>·</span><span>Web, Ads, Analytics</span></div>
-      </article>
-    </div>
-  </div>
-</section>
 
-<!-- ============ TOOLS ============ -->
-<section id="tools">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Free Tools</span>
-      <h2>Try before you ever talk to us</h2>
-      <p class="lede">Two working tools, free, no email required. This is how we think — in numbers and checklists, not slogans.</p>
-    </div>
-    <div class="tools-grid">
-      <div class="tool-card reveal">
-        <h3>Marketing ROI Calculator</h3>
-        <p>What does your marketing actually need to earn? Plug in your numbers.</p>
-        <div class="calc">
-          <label for="spend">Monthly marketing spend ($)</label>
-          <input id="spend" type="number" min="0" step="50" value="1000" inputmode="decimal">
-          <label for="margin">Gross margin on a sale (%)</label>
-          <input id="margin" type="number" min="1" max="100" step="1" value="40" inputmode="decimal">
-          <label for="avgsale">Average sale value ($)</label>
-          <input id="avgsale" type="number" min="1" step="10" value="250" inputmode="decimal">
-          <label for="conv">Lead-to-customer rate (%)</label>
-          <input id="conv" type="number" min="0.1" max="100" step="0.5" value="10" inputmode="decimal">
-          <button class="btn btn-primary" id="calcBtn" type="button">Calculate</button>
-          <div class="calc-out" id="calcOut" aria-live="polite" hidden></div>
+      <article class="work-card rv">
+        <div class="work-thumb wt3"><div class="art"></div><div class="big">GIFSQ Podcast</div></div>
+        <div class="work-body">
+          <div class="work-meta"><b>Podcast</b> • Global • Audio production</div>
+          <h3>A podcast people learn from — and enjoy</h3>
+          <p>Full production of an educational podcast: real conversations, real research, zero dry lectures.</p>
+          <button class="detail-toggle" aria-expanded="false">PROJECT DETAILS <span class="arr">→</span></button>
+          <div class="project-detail">
+            <h4>The Challenge</h4>
+            <p>Educational audio usually sounds like a lecture. This needed to feel like a conversation worth finishing.</p>
+            <h4>What I Created</h4>
+            <ul>
+              <li>Episode concepts built around real topics and research</li>
+              <li>Host and guest voice production</li>
+              <li>Full audio assembly and quality control</li>
+              <li>Companion visuals for video platforms</li>
+            </ul>
+            <h4>The Result</h4>
+            <p>A finished episode library with a consistent format — every episode delivers genuine knowledge in a conversational style.</p>
+          </div>
         </div>
-        <p class="fine">Estimates only — real ROI depends on your sales process, pricing and follow-up.</p>
-      </div>
-      <div class="tool-card reveal">
-        <h3>Google Business Profile Checklist</h3>
-        <p>The ten things that decide whether your profile wins the Map pack.</p>
-        <ul class="gbp" id="gbpList">
-          <li><label><input type="checkbox"> Business name, address and phone are correct and consistent</label></li>
-          <li><label><input type="checkbox"> Primary category (and secondaries) chosen correctly</label></li>
-          <li><label><input type="checkbox"> Hours set — including holidays and special hours</label></li>
-          <li><label><input type="checkbox"> Services or products listed completely</label></li>
-          <li><label><input type="checkbox"> 10+ real photos (exterior, interior, team, work)</label></li>
-          <li><label><input type="checkbox"> Business description written for customers, not keywords</label></li>
-          <li><label><input type="checkbox"> Review link ready and a process to ask every customer</label></li>
-          <li><label><input type="checkbox"> Every review answered — good and bad, professionally</label></li>
-          <li><label><input type="checkbox"> Posts published at least monthly (offers, news, events)</label></li>
-          <li><label><input type="checkbox"> Q&amp;A section monitored and answered</label></li>
-        </ul>
-        <div class="gbp-score" aria-live="polite"><strong id="gbpCount">0</strong> of 10 complete</div>
-        <div class="gbp-bar"><span id="gbpFill"></span></div>
-      </div>
+      </article>
+
+    </div>
+    <div class="honest-note rv"><strong>An honest note:</strong> I show real work and describe what was actually delivered. I don't invent views, followers or revenue numbers — if a project has verified metrics, they'll be shown; if not, the work speaks for itself.</div>
+    <div class="rv" style="margin-top:36px;text-align:center">
+      <p style="font-family:var(--font-d);font-size:20px;font-weight:600;margin-bottom:20px">LIKE WHAT YOU SEE? LET'S CREATE SOMETHING FOR YOUR BUSINESS.</p>
+      <a href="#contact" class="btn btn-accent">WORK WITH ME <span class="arr">→</span></a>
     </div>
   </div>
 </section>
 
-<!-- ============ PROCESS ============ -->
-<section class="alt" id="process">
+<!-- 06 HOW I CAN HELP -->
+<section id="help">
   <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">How We Work</span>
-      <h2>A process you can follow on one hand</h2>
+    <span class="label rv">How I help</span>
+    <h2 class="rv">You don't need more random posts.<br>You need content with a purpose.</h2>
+    <p class="lede rv">I turn your business, products and services into content that gives people a reason to stop, watch and engage.</p>
+    <div class="grid3">
+      <div class="card rv"><span class="num">01</span><h3>SHOW</h3><p>Show people what your business actually does — your products, your process, your people, your place.</p></div>
+      <div class="card rv"><span class="num">02</span><h3>CONNECT</h3><p>Create content your audience can understand and relate to — stories and ideas that feel familiar, not corporate.</p></div>
+      <div class="card rv"><span class="num">03</span><h3>GROW</h3><p>Use consistent content and real engagement to build an online presence that keeps working for you.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- 07 WHO I WANT TO WORK WITH -->
+<section id="audience" style="padding-top:40px">
+  <div class="wrap">
+    <span class="label rv">Who this is for</span>
+    <h2 class="rv">Built for people building something.</h2>
+    <p class="lede rv">I work with South Asian businesses, students, entrepreneurs, local businesses and personal brands — people with something real to show the world.</p>
+    <div class="chips rv">
+      <span class="chip hot">Nepal</span><span class="chip hot">India</span><span class="chip hot">Bangladesh</span>
+      <span class="chip hot">Pakistan</span><span class="chip hot">Sri Lanka</span><span class="chip">Bhutan</span><span class="chip">Maldives</span>
+      <span class="chip">Restaurants</span><span class="chip">Food businesses</span><span class="chip">Shops</span>
+      <span class="chip">Service providers</span><span class="chip">Creators</span><span class="chip">Students</span>
+      <span class="chip">Entrepreneurs</span><span class="chip">Personal brands</span>
+    </div>
+  </div>
+</section>
+
+<!-- 08 WHY WORK WITH ME -->
+<section id="why">
+  <div class="wrap">
+    <span class="label rv">Why me</span>
+    <h2 class="rv">I don't just want to make a video.<br>I want to understand what the video needs to do.</h2>
+    <div class="grid3">
+      <div class="card rv"><h3>Creative</h3><p>Focused on making content people actually want to watch — not content that just fills a feed.</p></div>
+      <div class="card rv"><h3>Business-minded</h3><p>Every piece should communicate something useful about your business, not just look nice.</p></div>
+      <div class="card rv"><h3>Social-first</h3><p>Created with Facebook, Instagram and short-form platforms in mind from the first idea.</p></div>
+      <div class="card rv"><h3>Experimental</h3><p>Different hooks, formats and ideas get tested to discover what actually connects with your audience.</p></div>
+      <div class="card rv"><h3>Personal</h3><p>You work directly with me — not through layers of a large agency structure.</p></div>
+      <div class="card rv" style="border-color:rgba(184,255,61,.35)"><h3 style="color:var(--accent)">The point</h3><p>Content with a job to do: get your business seen, understood and remembered.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 PROCESS -->
+<section id="process" style="background:linear-gradient(180deg,transparent,rgba(17,19,24,.6) 20%,rgba(17,19,24,.6) 80%,transparent)">
+  <div class="wrap">
+    <span class="label rv">Process</span>
+    <h2 class="rv">Simple, clear, no agency maze.</h2>
     <div class="steps">
-      <div class="step reveal"><span class="n">1</span><h3>Discover</h3><p>Free Growth Audit. We look at your digital presence the way a customer would — and the way Google does.</p></div>
-      <div class="step reveal"><span class="n">2</span><h3>Build</h3><p>We fix the foundation: profile, website, tracking, content — the things everything else stands on.</p></div>
-      <div class="step reveal"><span class="n">3</span><h3>Grow</h3><p>Content, social, ads and reputation — campaigns aimed at leads and sales, not vanity metrics.</p></div>
-      <div class="step reveal"><span class="n">4</span><h3>Measure</h3><p>Monthly reporting in plain English: what worked, what didn't, what changes next.</p></div>
+      <div class="step rv"><div class="n">01</div><h3>Send me your business</h3><p>Tell me what you do and send your Facebook, Instagram or page.</p></div>
+      <div class="step rv"><div class="n">02</div><h3>We discuss your goal</h3><p>More awareness? More engagement? Better content? Promote a product?</p></div>
+      <div class="step rv"><div class="n">03</div><h3>I create</h3><p>The video and content get developed around your business.</p></div>
+      <div class="step rv"><div class="n">04</div><h3>You review</h3><p>You see the content before anything gets published.</p></div>
+      <div class="step rv"><div class="n">05</div><h3>Publish &amp; learn</h3><p>We watch the response and use it to make the next content better.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
-<section id="about" class="alt">
+<!-- 10 BEFORE / AFTER -->
+<section id="before-after">
   <div class="wrap">
-    <div class="split">
-      <div class="reveal">
-        <span class="eyebrow">About</span>
-        <h2>Founder-led. Senior-only. Personal.</h2>
-        <p class="lede">DIGIFKLIX is a digital growth and marketing consultancy — not a social-media agency, not a reseller of ad packages.</p>
-        <p>Every client works directly with the founder. No juniors learning on your budget, no account managers relaying messages. When we take on your growth, we treat your business like our own — because our name is on the work.</p>
-        <ul class="checklist">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Consultancy first</strong> — advice you'd get if we were sitting in your office.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Senior-only delivery</strong> — the person who audits your business is the person who does the work.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Plain-English reporting</strong> — you'll always know what we did and what it earned.</span></li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <div class="limit">
-          <strong>What we won't do:</strong> guarantee rankings, promise AI systems will cite you, buy fake reviews, or report vanity metrics as victories. If you want someone who tells you what you want to hear, we're not it.
-        </div>
+    <span class="label rv">Creative thinking</span>
+    <h2 class="rv">From ordinary business information<br>to content people want to watch.</h2>
+    <p class="lede rv">This is the difference between posting and creating. Two examples of how I think:</p>
+
+    <div class="ba rv">
+      <div class="ba-grid">
+        <div class="ba-box before"><span class="ba-k">Before</span><p>"Restaurant serving momo and chowmein."</p></div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-box after"><span class="ba-k">After</span><p class="quote">"3 reasons our customers keep coming back for these momos…"</p><p style="margin-top:12px;color:var(--muted);font-size:15px">A short video built around curiosity — the food, the regulars, the story behind the recipe.</p></div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ============ INSIGHTS ============ -->
-<section id="insights">
-  <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow">Growth Notes</span>
-      <h2>Thinking worth reading</h2>
-      <p class="lede">Short, practical notes on getting discovered, trusted and chosen. No fluff, no jargon.</p>
-    </div>
-    <div class="work-grid">
-      <article class="work-card reveal">
-        <span class="tag">SEO</span>
-        <h3>SEO basics every local business should know</h3>
-        <p>Title tags, Google Business Profile, reviews and the handful of things that actually move local rankings.</p>
-      </article>
-      <article class="work-card reveal">
-        <span class="tag">Local</span>
-        <h3>Your Google Business Profile is your new homepage</h3>
-        <p>Most customers meet you on Google before they meet your website. Here's how to make that first impression count.</p>
-      </article>
-      <article class="work-card reveal">
-        <span class="tag">Reputation</span>
-        <h3>Reviews: the trust engine you're probably ignoring</h3>
-        <p>A practical system for earning honest reviews and answering the bad ones without panic.</p>
-      </article>
-      <article class="work-card reveal">
-        <span class="tag">AI Search</span>
-        <h3>What AI search means for your business</h3>
-        <p>ChatGPT and friends are answering customer questions now. What actually helps your business get mentioned — and what doesn't.</p>
-      </article>
+    <div class="ba rv">
+      <div class="ba-grid">
+        <div class="ba-box before"><span class="ba-k">Before</span><p>"We sell fresh vegetables daily."</p></div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-box after"><span class="ba-k">After</span><p class="quote">"The 5 AM routine behind your fresh vegetables…"</p><p style="margin-top:12px;color:var(--muted);font-size:15px">A behind-the-scenes morning at the market — the effort customers never see becomes the reason they trust you.</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FREE GROWTH AUDIT ============ -->
-<section id="audit" class="cta-band">
+<!-- 11 CONTENT IDEAS -->
+<section id="ideas" style="padding-top:40px">
   <div class="wrap">
-    <div class="center reveal">
-      <span class="eyebrow" style="color:#FCD34D">Free Growth Audit</span>
-      <h2 style="color:#fff">Two ways to start. Both free.</h2>
-      <p class="lede" style="color:#C7D2FE">Get a plain-English audit of your digital presence — or book a strategy call and talk it through.</p>
+    <span class="label rv">Ideas</span>
+    <h2 class="rv">What could we create for your business?</h2>
+    <p class="lede rv">A starting menu — every business gets its own version of these.</p>
+    <div class="grid3">
+      <div class="idea rv"><span class="k">Product</span><p class="quote">"Here's why our customers love this."</p></div>
+      <div class="idea rv"><span class="k">Story</span><p class="quote">"How this business started."</p></div>
+      <div class="idea rv"><span class="k">Education</span><p class="quote">"3 things you should know before buying…"</p></div>
+      <div class="idea rv"><span class="k">Behind the scenes</span><p class="quote">"What happens before your order reaches you?"</p></div>
+      <div class="idea rv"><span class="k">Customer</span><p class="quote">"Why our customers choose us."</p></div>
+      <div class="idea rv"><span class="k">Promotion</span><p class="quote">"This week's special offer."</p></div>
     </div>
-    <div class="audit-grid">
-      <form class="audit-form reveal" id="auditForm" novalidate>
-        <h3 style="margin-bottom:1rem">Request your free audit</h3>
-        <div class="field">
-          <label for="fName">Your name *</label>
-          <input id="fName" name="name" type="text" autocomplete="name">
-          <span class="err" data-err="fName"></span>
+  </div>
+</section>
+
+<!-- 12 RESULTS -->
+<section id="results">
+  <div class="wrap">
+    <span class="label rv">Results</span>
+    <h2 class="rv">Content is creative.<br>Growth is measurable.</h2>
+    <p class="lede rv">When we work together, these are the signals we watch — and I'll only ever show you real numbers from real work.</p>
+    <div class="metrics">
+      <div class="metric rv"><div class="m">Reach</div><p>How many people your content finds</p></div>
+      <div class="metric rv"><div class="m">Views</div><p>How many stop and watch</p></div>
+      <div class="metric rv"><div class="m">Engagement</div><p>Likes, shares, comments, saves</p></div>
+      <div class="metric rv"><div class="m">Enquiries</div><p>Messages and conversations started</p></div>
+    </div>
+    <div class="honest-note rv"><strong>Honest about outcomes:</strong> results depend on your business, your audience, the platform, the content and consistency. I focus on testing, learning and improving — never on promising fixed follower, view or revenue numbers.</div>
+  </div>
+</section>
+
+<!-- 13 ABOUT -->
+<section id="about" style="background:linear-gradient(180deg,transparent,rgba(17,19,24,.6) 20%,rgba(17,19,24,.6) 80%,transparent)">
+  <div class="wrap about-grid">
+    <div class="avatar rv"><div class="init">U<em>.</em></div></div>
+    <div>
+      <span class="label rv">About me</span>
+      <h2 class="rv">Hi, I'm Umesh.</h2>
+      <p class="lede rv">I'm a digital content creator focused on helping businesses and entrepreneurs communicate better online. I created DIGIFKLIX as a place to showcase my work and connect with people who need help creating better content for their business.</p>
+      <div class="principle rv">Create. Learn. Improve.</div>
+      <a href="#contact" class="btn btn-accent rv">LET'S TALK <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 14 FAQ -->
+<section id="faq">
+  <div class="wrap" style="max-width:860px">
+    <span class="label rv">FAQ</span>
+    <h2 class="rv">Questions, answered straight.</h2>
+    <div style="margin-top:40px">
+      <div class="faq-item rv">
+        <button class="faq-q">What kind of businesses do you work with?<span class="pl">+</span></button>
+        <div class="faq-a">Mostly small and local businesses — restaurants, food businesses, shops, service providers — plus students, entrepreneurs and personal brands. If you have something real to show people, we can probably make content around it.</div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">Do you only make videos?<span class="pl">+</span></button>
+        <div class="faq-a">No. Video is the core, but I also create social media content, captions, content ideas, page content, graphics, thumbnails and AI-assisted visuals — whatever your business needs to look alive online.</div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">Can you manage our Facebook page?<span class="pl">+</span></button>
+        <div class="faq-a">Yes. I can plan and create your page content — posts, videos, captions — and keep it consistent so your page stays active and worth following.</div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">Can you help grow our page?<span class="pl">+</span></button>
+        <div class="faq-a">I can help with the part that matters most: consistent, engaging content and a clear strategy. Growth itself depends on your audience, market and consistency too — so I won't promise fixed follower or view numbers, but I'll work to earn them.</div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">Can you create content remotely?<span class="pl">+</span></button>
+        <div class="faq-a">Yes. Send me your photos, clips, menu, product details — whatever you have — and I'll edit, design and produce finished content from it. Distance doesn't stop the work.</div>
+      </div>
+      <div class="faq-item rv">
+        <button class="faq-q">How do we start?<span class="pl">+</span></button>
+        <div class="faq-a">Fill in the project request form below, or just send me your business page or website. I'll take a look and we'll talk about what kind of content could work for you — no complicated process.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 FINAL CTA -->
+<section id="start" style="padding-top:40px">
+  <div class="wrap">
+    <div class="final-cta rv">
+      <span class="label">Final call</span>
+      <h2>Let's turn it into content.</h2>
+      <p class="lede">Send me your business page, website or idea. I'll take a look and we can discuss what kind of content could work for you.</p>
+      <div class="row">
+        <a href="#contact" class="btn btn-accent">SEND ME YOUR BUSINESS <span class="arr">→</span></a>
+        <a href="#work" class="btn btn-ghost">VIEW MY WORK</a>
+      </div>
+      <p class="small">No complicated agency process. Just a conversation about your business and what we can create.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 16 CONTACT FORM -->
+<section id="contact" style="padding-top:40px">
+  <div class="wrap">
+    <div style="text-align:center">
+      <span class="label rv">Contact</span>
+      <h2 class="rv">Tell me about your business.</h2>
+      <p class="lede rv" style="margin:0 auto">Fill this in and I'll get back to you. The more I know, the better the ideas.</p>
+    </div>
+    <div class="form-card rv">
+      <form id="projectForm" novalidate>
+        <div class="f-row">
+          <div class="f-group" data-field="name">
+            <label for="fName">Your Name <span class="req">*</span></label>
+            <input type="text" id="fName" name="name" autocomplete="name" placeholder="Your full name">
+            <span class="err">Please tell me your name.</span>
+          </div>
+          <div class="f-group" data-field="business">
+            <label for="fBiz">Business / Brand <span class="req">*</span></label>
+            <input type="text" id="fBiz" name="business" autocomplete="organization" placeholder="Your business or brand name">
+            <span class="err">Please add your business or brand name.</span>
+          </div>
         </div>
-        <div class="field">
-          <label for="fEmail">Email *</label>
-          <input id="fEmail" name="email" type="email" autocomplete="email">
-          <span class="err" data-err="fEmail"></span>
+        <div class="f-row">
+          <div class="f-group" data-field="country">
+            <label for="fCountry">Country <span class="req">*</span></label>
+            <input type="text" id="fCountry" name="country" autocomplete="country-name" placeholder="Where are you based?">
+            <span class="err">Please add your country.</span>
+          </div>
+          <div class="f-group" data-field="link">
+            <label for="fLink">Business / Social Media Link</label>
+            <input type="url" id="fLink" name="link" placeholder="https://facebook.com/yourpage">
+            <span class="err">That link doesn't look right — check it once.</span>
+          </div>
         </div>
-        <div class="field">
-          <label for="fBiz">Business name *</label>
-          <input id="fBiz" name="business" type="text" autocomplete="organization">
-          <span class="err" data-err="fBiz"></span>
+        <div class="f-group">
+          <label>What do you need help with? <span style="color:var(--muted);font-weight:400">(pick any)</span></label>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="services" value="Video Content"> Video Content</label>
+            <label class="check"><input type="checkbox" name="services" value="Facebook"> Facebook</label>
+            <label class="check"><input type="checkbox" name="services" value="Instagram"> Instagram</label>
+            <label class="check"><input type="checkbox" name="services" value="Social Media Content"> Social Media Content</label>
+            <label class="check"><input type="checkbox" name="services" value="Business Promotion"> Business Promotion</label>
+            <label class="check"><input type="checkbox" name="services" value="Page Growth"> Page Growth</label>
+            <label class="check"><input type="checkbox" name="services" value="Creative Design"> Creative Design</label>
+            <label class="check"><input type="checkbox" name="services" value="Other"> Other</label>
+          </div>
         </div>
-        <div class="field">
-          <label for="fWeb">Website (if you have one)</label>
-          <input id="fWeb" name="website" type="url" placeholder="https://" autocomplete="url">
-          <span class="err" data-err="fWeb"></span>
+        <div class="f-group" data-field="goal">
+          <label for="fGoal">Tell me a little about your goal <span class="req">*</span></label>
+          <textarea id="fGoal" name="goal" placeholder="What do you want this content to do for your business?"></textarea>
+          <span class="err">A line or two about your goal helps me reply with real ideas.</span>
         </div>
-        <div class="field">
-          <label for="fChallenge">Your biggest challenge *</label>
-          <select id="fChallenge" name="challenge">
-            <option value="">Choose one…</option>
-            <option>Not enough customers finding us online</option>
-            <option>Website doesn't bring leads</option>
-            <option>Bad or few reviews</option>
-            <option>Competitors outrank us</option>
-            <option>Ads cost too much for what they return</option>
-            <option>Something else</option>
-          </select>
-          <span class="err" data-err="fChallenge"></span>
-        </div>
-        <div class="field">
-          <label for="fContact">Preferred contact</label>
-          <select id="fContact" name="contact">
-            <option>Email</option>
-            <option>Phone call</option>
-            <option>WhatsApp</option>
-          </select>
-        </div>
-        <button class="btn btn-accent" type="submit">Request My Free Audit</button>
-        <p class="fine" style="color:#C7D2FE">Submitting opens your email app with the audit request ready to send. We reply to every request personally.</p>
-        <div class="form-ok" id="formOk" role="status" hidden>
-          <strong>Request ready!</strong> Your email app should have opened with everything filled in — just hit send.
-        </div>
+        <button type="submit" class="btn btn-accent" style="width:100%;justify-content:center">SEND PROJECT REQUEST <span class="arr">→</span></button>
+        <p class="form-note">Sending opens your email app with everything filled in — nothing is stored on this site.</p>
       </form>
-      <div class="call-card reveal">
-        <h3>Prefer to talk?</h3>
-        <p>Book a free 20-minute strategy call. We'll look at your online presence together and tell you honestly what's worth fixing first — whether you hire us or not.</p>
-        <ul class="checklist" style="margin:1.25rem 0">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>No pitch decks, no pressure</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>You'll leave with 2–3 clear next steps</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span>Directly with the founder</span></li>
-        </ul>
-        <a class="btn btn-accent" href="#audit" id="bookCall">Book a Strategy Call</a>
-        <p class="fine" style="color:#C7D2FE">Online booking opens with our launch — for now, request the audit and mention "call" in your email.</p>
+      <div id="formSuccess">
+        <div class="tick">✓</div>
+        <h3>MESSAGE SENT.</h3>
+        <p>Thanks for reaching out. I'll review your project details and get back to you.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
+<!-- 17 FOOTER -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="logo" style="margin-bottom:1rem"><span class="logo-mark">D</span> DIGIFKLIX</div>
-        <p class="fine">Digital Growth &amp; Marketing Consultancy.<br>Get Discovered. Get Trusted. Get Chosen.</p>
+        <div class="foot-brand">DIGI<span>FKLIX</span></div>
+        <p class="foot-tag">Video • Content • Social Growth<br>Create. Connect. Grow.</p>
       </div>
       <div>
-        <h4>Explore</h4>
-        <a href="#services">Services</a>
-        <a href="#ai-search">AI Search Visibility</a>
-        <a href="#local">Local Discovery</a>
-        <a href="#work">Work</a>
-        <a href="#insights">Growth Notes</a>
+        <div class="foot-h">Explore</div>
+        <ul class="foot-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#create">What I Create</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
       <div>
-        <h4>Company</h4>
-        <a href="#about">About</a>
-        <a href="#process">Process</a>
-        <a href="#tools">Free Tools</a>
-        <a href="#audit">Free Growth Audit</a>
-      </div>
-      <div>
-        <h4>Get in touch</h4>
-        <!-- TODO (launch): confirm public contact email with Umesh before go-live -->
-        <a href="mailto:digiflixca@gmail.com">digiflixca@gmail.com</a>
-        <a href="#audit">Request an audit</a>
+        <div class="foot-h">Follow</div>
+        <ul class="foot-links">
+          <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://youtube.com/@digiflixca" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
       </div>
     </div>
-    <div class="legal">
-      <details>
-        <summary>Privacy summary</summary>
-        <p class="fine">This site collects only what you send us through the audit form (name, email, business details) so we can reply to your request. We don't sell personal information, run third-party trackers, or share your details with advertisers. The free tools on this page run entirely in your browser — your numbers never leave your device. Full policy to follow at launch.</p>
-      </details>
-      <details>
-        <summary>Terms summary</summary>
-        <p class="fine">Content on this site is general information, not a guarantee of results. We never promise search rankings, AI citations, or specific revenue outcomes. Project terms — scope, timelines, fees — are agreed in writing before work begins. Full terms to follow at launch.</p>
-      </details>
+    <div class="copy">
+      <span>© 2026 DIGIFKLIX</span>
+      <span>I create content that helps businesses get seen.</span>
     </div>
-    <p class="fine" style="margin-top:1.5rem">© <span id="year">2026</span> DIGIFKLIX. All rights reserved.</p>
   </div>
 </footer>
 
 <script>
 (function(){
   "use strict";
-  /* Contact email — CONFIRM WITH UMESH BEFORE LAUNCH */
   var CONTACT_EMAIL = "digiflixca@gmail.com";
 
-  /* Footer year */
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  /* Mobile nav */
-  var toggle = document.querySelector(".nav-toggle");
-  var links = document.querySelector(".nav-links");
-  if (toggle && links) {
-    toggle.addEventListener("click", function(){
-      var open = links.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  /* mobile menu */
+  var menuBtn = document.getElementById('menuBtn');
+  var navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', function(){
+    var open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.textContent = open ? '✕' : '☰';
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.textContent = '☰';
     });
-    links.querySelectorAll("a").forEach(function(a){
-      a.addEventListener("click", function(){
-        links.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
-    });
-  }
+  });
 
-  /* Reveal on scroll (skip if reduced motion) */
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var revealEls = document.querySelectorAll(".reveal");
-  if (reduce || !("IntersectionObserver" in window)) {
-    revealEls.forEach(function(el){ el.classList.add("visible"); });
+  /* reveal on scroll */
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.rv');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    els.forEach(function(e){ e.classList.add('in'); });
   } else {
     var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); }
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
       });
-    }, { threshold: 0.12 });
-    revealEls.forEach(function(el){ io.observe(el); });
+    }, {threshold: .12, rootMargin: '0px 0px -40px 0px'});
+    els.forEach(function(e){ io.observe(e); });
   }
 
-  /* ROI calculator */
-  var spend = document.getElementById("spend"),
-      margin = document.getElementById("margin"),
-      avgsale = document.getElementById("avgsale"),
-      conv = document.getElementById("conv"),
-      calcBtn = document.getElementById("calcBtn"),
-      calcOut = document.getElementById("calcOut");
-  function money(n){ return "$" + n.toLocaleString("en-CA", {maximumFractionDigits: 0}); }
-  calcBtn.addEventListener("click", function(){
-    var s = parseFloat(spend.value) || 0,
-        m = parseFloat(margin.value) || 0,
-        a = parseFloat(avgsale.value) || 0,
-        c = parseFloat(conv.value) || 0;
-    if (s <= 0 || m <= 0 || m > 100 || a <= 0 || c <= 0 || c > 100) {
-      calcOut.hidden = false;
-      calcOut.innerHTML = "<strong>Check your numbers</strong><br>Enter a spend above $0, an average sale above $0, a margin between 1–100%, and a lead-to-customer rate between 0.1–100%.";
+  /* hero entrance */
+  document.querySelectorAll('.hero .rv').forEach(function(e, i){
+    e.style.transitionDelay = (i * 90) + 'ms';
+  });
+
+  /* project detail toggles */
+  document.querySelectorAll('.detail-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var detail = btn.parentElement.querySelector('.project-detail');
+      var open = detail.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.firstChild.textContent = open ? 'HIDE DETAILS ' : 'PROJECT DETAILS ';
+    });
+  });
+
+  /* faq accordion */
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click', function(){
+      var item = q.parentElement;
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){ o.classList.remove('open'); });
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  /* contact form */
+  var form = document.getElementById('projectForm');
+  var success = document.getElementById('formSuccess');
+  function setInvalid(name, bad){
+    var g = form.querySelector('[data-field="'+name+'"]');
+    if (g) g.classList.toggle('invalid', bad);
+    return !bad;
+  }
+  ['name','business','country','link','goal'].forEach(function(n){
+    var input = document.getElementById(n === 'name' ? 'fName' : n === 'business' ? 'fBiz' : n === 'country' ? 'fCountry' : n === 'link' ? 'fLink' : 'fGoal');
+    if (input) input.addEventListener('input', function(){ setInvalid(n, false); });
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('fName').value.trim();
+    var biz = document.getElementById('fBiz').value.trim();
+    var country = document.getElementById('fCountry').value.trim();
+    var link = document.getElementById('fLink').value.trim();
+    var goal = document.getElementById('fGoal').value.trim();
+    var ok = true;
+    ok = setInvalid('name', name.length < 2) && ok;
+    ok = setInvalid('business', biz.length < 2) && ok;
+    ok = setInvalid('country', country.length < 2) && ok;
+    ok = setInvalid('goal', goal.length < 10) && ok;
+    if (link) {
+      var linkOk = /^https?:\/\/.+\..+/.test(link);
+      ok = setInvalid('link', !linkOk) && ok;
+    } else { setInvalid('link', false); }
+    if (!ok) {
+      var firstBad = form.querySelector('.f-group.invalid input, .f-group.invalid textarea');
+      if (firstBad) firstBad.focus();
       return;
     }
-    var profitPerSale = a * (m / 100);
-    var salesNeeded = Math.ceil(s / profitPerSale);
-    var breakEvenRev = salesNeeded * a;
-    var targetROAS = breakEvenRev / s;
-    var leadsNeeded = Math.ceil(salesNeeded / (c / 100));
-    calcOut.hidden = false;
-    calcOut.innerHTML =
-      "<strong>Your break-even targets</strong><br>" +
-      "Sales needed per month: <strong>" + salesNeeded + "</strong><br>" +
-      "Revenue needed to break even: <strong>" + money(breakEvenRev) + "</strong><br>" +
-      "Leads needed per month: <strong>" + leadsNeeded + "</strong> (at a " + c + "% close rate)<br>" +
-      "Target ROAS: <strong>" + targetROAS.toFixed(2) + ":1</strong>";
+    var services = Array.prototype.map.call(
+      form.querySelectorAll('input[name="services"]:checked'),
+      function(c){ return c.value; }
+    ).join(', ') || 'Not specified';
+    var subject = 'Project request from ' + name + ' — ' + biz;
+    var body = 'Name: ' + name + '\nBusiness/Brand: ' + biz + '\nCountry: ' + country +
+      '\nLink: ' + (link || 'Not provided') + '\nNeeds help with: ' + services +
+      '\n\nGoal:\n' + goal;
+    window.location.href = 'mailto:' + CONTACT_EMAIL +
+      '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(body);
+    form.style.display = 'none';
+    success.style.display = 'block';
+    success.scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block: 'center'});
   });
 
-  /* GBP checklist */
-  var gbpList = document.getElementById("gbpList"),
-      gbpCount = document.getElementById("gbpCount"),
-      gbpFill = document.getElementById("gbpFill");
-  function updateGbp(){
-    var boxes = gbpList.querySelectorAll("input[type=checkbox]");
-    var done = 0;
-    boxes.forEach(function(b){ if (b.checked) done++; });
-    gbpCount.textContent = done;
-    gbpFill.style.width = (done / boxes.length * 100) + "%";
-  }
-  gbpList.addEventListener("change", updateGbp);
-  updateGbp();
-
-  /* Audit form validation + mailto */
-  var form = document.getElementById("auditForm");
-  function setErr(id, msg){
-    var input = document.getElementById(id);
-    var errEl = form.querySelector('[data-err="' + id + '"]');
-    if (msg) {
-      input.classList.add("invalid");
-      input.setAttribute("aria-invalid", "true");
-      if (errEl) errEl.textContent = msg;
-    } else {
-      input.classList.remove("invalid");
-      input.removeAttribute("aria-invalid");
-      if (errEl) errEl.textContent = "";
-    }
-  }
-  form.addEventListener("submit", function(ev){
-    ev.preventDefault();
-    var name = document.getElementById("fName").value.trim(),
-        email = document.getElementById("fEmail").value.trim(),
-        biz = document.getElementById("fBiz").value.trim(),
-        web = document.getElementById("fWeb").value.trim(),
-        challenge = document.getElementById("fChallenge").value,
-        contact = document.getElementById("fContact").value;
-    var firstBad = null;
-    if (!name) { setErr("fName", "Please enter your name."); firstBad = firstBad || "fName"; }
-    else setErr("fName", "");
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { setErr("fEmail", "Please enter a valid email address."); firstBad = firstBad || "fEmail"; }
-    else setErr("fEmail", "");
-    if (!biz) { setErr("fBiz", "Please enter your business name."); firstBad = firstBad || "fBiz"; }
-    else setErr("fBiz", "");
-    if (web && !/^https?:\/\/.+\..+/.test(web)) { setErr("fWeb", "Website should start with http:// or https://"); firstBad = firstBad || "fWeb"; }
-    else setErr("fWeb", "");
-    if (!challenge) { setErr("fChallenge", "Please choose your biggest challenge."); firstBad = firstBad || "fChallenge"; }
-    else setErr("fChallenge", "");
-    if (firstBad) { document.getElementById(firstBad).focus(); return; }
-
-    var subject = "Free Growth Audit Request — " + biz;
-    var body = "Name: " + name + "\nEmail: " + email + "\nBusiness: " + biz +
-               "\nWebsite: " + (web || "—") + "\nBiggest challenge: " + challenge +
-               "\nPreferred contact: " + contact;
-    window.location.href = "mailto:" + CONTACT_EMAIL +
-      "?subject=" + encodeURIComponent(subject) +
-      "&body=" + encodeURIComponent(body);
-    document.getElementById("formOk").hidden = false;
-  });
-
-  /* Book-a-call button scrolls to form and preselects */
-  var bookCall = document.getElementById("bookCall");
-  if (bookCall) {
-    bookCall.addEventListener("click", function(ev){
-      ev.preventDefault();
-      document.getElementById("auditForm").scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
-      document.getElementById("fName").focus({ preventScroll: true });
-    });
-  }
+  /* footer year */
+  // fixed © 2026 per brand spec
 })();
 </script>
 </body>
