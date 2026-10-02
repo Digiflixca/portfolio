@@ -235,6 +235,55 @@ footer{border-top:1px solid var(--border);padding:64px 0 110px}
   .final-cta{padding:64px 24px}
 }
 @media(max-width:560px){.grid4{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}}
+/* ---------- content-creator motion pack ---------- */
+/* springy reveals — bouncy, not corporate */
+.rv{transition:opacity .7s ease,transform .8s cubic-bezier(.34,1.56,.64,1)!important}
+.hero .rv{transition:opacity .9s ease,transform .9s cubic-bezier(.34,1.56,.64,1)!important}
+
+/* kinetic headline words: pop in one by one */
+h1 .kw{display:inline-block;opacity:0;transform:translateY(.6em) rotate(5deg) scale(.85)}
+h1 .kw.on{opacity:1;transform:none;transition:transform .65s cubic-bezier(.34,1.8,.5,1),opacity .35s ease}
+h1 .kw.hl{color:var(--accent)}
+
+/* creator ticker strip */
+.ticker{overflow:hidden;background:var(--accent);color:#08090B;transform:rotate(-1.2deg) scale(1.02);
+  border-top:3px solid #08090B;border-bottom:3px solid #08090B;margin:10px 0 0;position:relative;z-index:2}
+.ticker-track{display:flex;width:max-content;animation:tick 26s linear infinite;padding:12px 0}
+.ticker-track span{font-family:var(--font-d);font-weight:700;font-size:19px;letter-spacing:.14em;
+  padding:0 26px;white-space:nowrap;display:flex;align-items:center;gap:26px}
+.ticker-track span::after{content:"✦";font-size:15px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* sticker badges */
+.sticker{position:absolute;z-index:3;font-family:var(--font-d);font-weight:700;font-size:13px;letter-spacing:.08em;
+  background:var(--accent);color:#08090B;padding:10px 16px;border-radius:14px;border:3px solid #08090B;
+  box-shadow:5px 5px 0 rgba(0,0,0,.45);transform:rotate(-8deg);cursor:default}
+.sticker.alt{background:var(--violet);color:#fff;transform:rotate(7deg)}
+.sticker:hover{animation:wiggle .45s ease}
+@keyframes wiggle{0%,100%{transform:rotate(-8deg) scale(1)}25%{transform:rotate(-3deg) scale(1.08)}60%{transform:rotate(-12deg) scale(1.05)}}
+.sticker.alt:hover{animation:wiggle2 .45s ease}
+@keyframes wiggle2{0%,100%{transform:rotate(7deg) scale(1)}25%{transform:rotate(12deg) scale(1.08)}60%{transform:rotate(2deg) scale(1.05)}}
+
+/* floating deco stars */
+.deco-star{position:absolute;color:var(--accent);opacity:.55;pointer-events:none;animation:floaty 5.5s ease-in-out infinite;z-index:1}
+.deco-star.v{color:var(--violet);animation-duration:7s;animation-delay:-2.5s}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-16px) rotate(14deg)}}
+
+/* boing buttons */
+.btn-accent:hover{animation:boing .5s cubic-bezier(.34,1.56,.64,1)}
+@keyframes boing{0%{transform:scale(1,1)}30%{transform:scale(1.1,.9)}55%{transform:scale(.95,1.06)}75%{transform:scale(1.03,.98)}100%{transform:scale(1,1)}}
+
+/* playful card hover */
+.card,.work-card{transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .3s ease,border-color .3s ease}
+.card:hover{transform:translateY(-7px) rotate(-.6deg);border-color:rgba(184,255,61,.4)}
+.work-card:hover{transform:translateY(-7px) rotate(.5deg)}
+.work-card:hover .work-thumb .big{transform:scale(1.04) rotate(-1deg)}
+.work-thumb .big{transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+
+/* label bounce on scroll-in */
+.label.in{animation:labelpop .5s cubic-bezier(.34,1.8,.5,1)}
+@keyframes labelpop{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
+
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
@@ -277,10 +326,22 @@ footer{border-top:1px solid var(--border);padding:64px 0 110px}
     </div>
     <div class="featured rv">
       <div class="art"></div><div class="rings"></div>
+      <span class="sticker" style="top:18px;left:-8px">100% ORIGINAL</span>
+      <span class="sticker alt" style="bottom:76px;right:-6px">NEW WORK</span>
       <div class="cap">MY LATEST WORK<small>Video &amp; content production — scroll to see it</small></div>
     </div>
   </div>
+  <span class="deco-star" style="top:120px;left:6%;font-size:26px">✦</span>
+  <span class="deco-star v" style="top:340px;left:44%;font-size:18px">✦</span>
+  <span class="deco-star" style="bottom:80px;right:8%;font-size:22px;animation-delay:-2s">✦</span>
 </section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>CREATE</span><span>CONNECT</span><span>GROW</span><span>VIDEO</span><span>CONTENT</span><span>SOCIAL</span>
+    <span>CREATE</span><span>CONNECT</span><span>GROW</span><span>VIDEO</span><span>CONTENT</span><span>SOCIAL</span>
+  </div>
+</div>
 
 <!-- 02 IMMEDIATE VALUE -->
 <section id="value" style="padding-top:40px">
@@ -711,6 +772,34 @@ footer{border-top:1px solid var(--border);padding:64px 0 110px}
   document.querySelectorAll('.hero .rv').forEach(function(e, i){
     e.style.transitionDelay = (i * 90) + 'ms';
   });
+
+  /* kinetic headline: words pop in like a creator's title card */
+  (function(){
+    var h1 = document.querySelector('.hero h1');
+    if (!h1 || reduceMotion) return;
+    var frag = document.createDocumentFragment();
+    var delay = 350;
+    function addWords(node, hl){
+      node.textContent.split(/(\s+)/).forEach(function(part){
+        if (!part) return;
+        if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(' ')); return; }
+        var s = document.createElement('span');
+        s.className = 'kw' + (hl ? ' hl' : '');
+        s.textContent = part;
+        frag.appendChild(s);
+        (function(el, d){
+          setTimeout(function(){ el.classList.add('on'); }, d);
+        })(s, delay);
+        delay += 110;
+      });
+    }
+    Array.prototype.forEach.call(h1.childNodes, function(n){
+      if (n.nodeType === 3) addWords(n, false);
+      else if (n.nodeType === 1) addWords(n, n.classList.contains('hl'));
+    });
+    h1.textContent = '';
+    h1.appendChild(frag);
+  })();
 
   /* project detail toggles */
   document.querySelectorAll('.detail-toggle').forEach(function(btn){
