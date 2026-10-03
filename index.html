@@ -287,6 +287,16 @@ h1 .kw.hl{color:var(--accent)}
 .label.in{animation:labelpop .5s cubic-bezier(.34,1.8,.5,1)}
 @keyframes labelpop{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
 
+/* ---------- showreel hero + video cards ---------- */
+.featured video.showreel{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.featured .shade{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,9,11,.15) 0%,transparent 35%,transparent 55%,rgba(8,9,11,.78) 100%)}
+.featured .rings{z-index:1}
+.wt-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .45s cubic-bezier(.34,1.56,.64,1)}
+.work-card:hover .wt-photo img{transform:scale(1.06)}
+.wt-photo .vlabel{position:absolute;left:14px;top:12px;z-index:2;font-family:var(--font-d);font-size:11px;font-weight:700;letter-spacing:.18em;background:rgba(8,9,11,.72);border:1px solid rgba(184,255,61,.35);padding:6px 12px;border-radius:100px;color:var(--accent)}
+.play-badge{position:relative;z-index:2;width:64px;height:64px;border-radius:50%;background:rgba(184,255,61,.94);color:#08090B;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 10px 34px rgba(0,0,0,.55);transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+.work-card:hover .play-badge{transform:scale(1.14) rotate(-6deg)}
+
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
@@ -328,10 +338,11 @@ h1 .kw.hl{color:var(--accent)}
       <p class="trust rv"><strong>Real projects. Real content.</strong> Built to get attention.</p>
     </div>
     <div class="featured rv">
-      <div class="art"></div><div class="rings"></div>
+      <video class="showreel" src="work/momo-reel.mp4" muted loop playsinline autoplay preload="metadata"></video>
+      <div class="shade"></div><div class="rings"></div>
       <span class="sticker" style="top:18px;left:-8px">100% ORIGINAL</span>
       <span class="sticker alt" style="bottom:76px;right:-6px">NEW WORK</span>
-      <div class="cap">MY LATEST WORK<small>Video &amp; content production — scroll to see it</small></div>
+      <div class="cap">LATEST CLIENT WORK<small>Himalayan Momo Corner — 3D food reel</small></div>
     </div>
   </div>
   <span class="deco-star" style="top:120px;left:6%;font-size:26px">✦</span>
@@ -378,7 +389,7 @@ h1 .kw.hl{color:var(--accent)}
     <div class="grid3">
 
       <article class="work-card rv">
-        <div class="work-thumb wt4"><div class="art"></div><div class="big">Himalayan Momo Corner</div></div>
+        <div class="work-thumb wt-photo"><img src="work/momo-reel.jpg" alt="Frame from the Himalayan Momo Corner 3D food reel" loading="lazy"><span class="vlabel">VIDEO</span><span class="play-badge">▶</span></div>
         <div class="work-body">
           <div class="work-meta"><b>Client work</b> • UK • 3D VFX reel</div>
           <h3>How a momo is born — 3D food reel</h3>
@@ -404,7 +415,7 @@ h1 .kw.hl{color:var(--accent)}
       </article>
 
       <article class="work-card rv">
-        <div class="work-thumb wt5"><div class="art"></div><div class="big">Momo Ad: Steamed to Perfection</div></div>
+        <div class="work-thumb wt-photo"><img src="work/momo-ad.jpg" alt="Frame from the Himalayan Momo Corner cinematic ad" loading="lazy"><span class="vlabel">VIDEO</span><span class="play-badge">▶</span></div>
         <div class="work-body">
           <div class="work-meta"><b>Client work</b> • UK • Cinematic video ad</div>
           <h3>A momo's journey, from ingredients to steamer</h3>
@@ -430,7 +441,7 @@ h1 .kw.hl{color:var(--accent)}
       </article>
 
       <article class="work-card rv">
-        <div class="work-thumb wt6"><div class="art"></div><div class="big">Animated Menu Reel</div></div>
+        <div class="work-thumb wt-photo"><img src="work/momo-poster.jpg" alt="Frame from the animated chalkboard menu reel" loading="lazy"><span class="vlabel">VIDEO</span><span class="play-badge">▶</span></div>
         <div class="work-body">
           <div class="work-meta"><b>Client work</b> • UK • Animated poster</div>
           <h3>Chalkboard menu, brought to life</h3>
@@ -974,6 +985,20 @@ h1 .kw.hl{color:var(--accent)}
 
   /* footer year */
   // fixed © 2026 per brand spec
+
+  /* hover-to-preview on work videos (desktop only; never hijacks a video the visitor started) */
+  if (window.matchMedia('(hover:hover)').matches) {
+    document.querySelectorAll('.work-card video').forEach(function(v){
+      var card = v.closest('.work-card');
+      v.addEventListener('pointerdown', function(){ v.dataset.touched = '1'; v.muted = false; }, {passive:true});
+      card.addEventListener('mouseenter', function(){
+        if (!v.dataset.touched) { v.muted = true; v.play().catch(function(){}); }
+      });
+      card.addEventListener('mouseleave', function(){
+        if (!v.dataset.touched) { v.pause(); }
+      });
+    });
+  }
 })();
 </script>
 </body>
